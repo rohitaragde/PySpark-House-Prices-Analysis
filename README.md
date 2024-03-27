@@ -26,6 +26,22 @@ The dataset used in this study can be found on [House Prices Dataset](https://ww
 - Tools: PySpark, Pandas (for visualization purposes)
 - Techniques: Advanced regression techniques, feature engineering, exploratory data analysis (EDA)
 
+## Model Implementation
+In our analysis, we implement the following machine learning models:
+
+### Linear Regression
+- Description: Linear regression is a basic and commonly used model for predicting numeric outcomes. It works by fitting a linear relationship between the input features and the target variable.
+- Implementation: We use PySpark's LinearRegression model to train a linear regression model on the House Prices dataset.
+
+### Decision Tree
+- Description: Decision trees are a non-linear model that uses a tree-like structure to make predictions. Each internal node represents a "decision" based on a feature, and each leaf node represents the outcome.
+- Implementation: We utilize PySpark's DecisionTreeRegressor to train a decision tree model on the House Prices dataset.
+
+### Random Forest
+- Description: Random forests are an ensemble learning method that combines multiple decision trees to improve predictive performance and reduce overfitting.
+- Implementation: Using PySpark's RandomForestRegressor, we train a random forest model on the House Prices dataset.
+
+
 ## Key Insights
 - The dataset comprises 79 distinct variables capturing various facets of homes in Ames, Iowa.
 - Advanced regression techniques were employed to develop accurate predictive models for estimating residential property sale prices.
