@@ -60,6 +60,10 @@ Comparing all models, it was observed that the Random Forest model performed the
 
 In summary, our exploration through different modeling techniques has provided valuable insights into predicting housing prices. The varying performances and characteristics of each model underscore the complexity of the task and the importance of choosing the right model for the specific nuances of the dataset.
 
+![Model Evaluation](/Images/model_performance.png)
+
+
+
 ## Potential Improvements
 
 Advanced Feature Engineering: Continuously explore feature engineering possibilities, considering more sophisticated techniques like dimensionality reduction and text analytics for property descriptions.
