@@ -47,8 +47,46 @@ These feature importances show that Overall Quality is clearly the best variable
 
 
 ### Random Forest
-- Description: Random forests are an ensemble learning method that combines multiple decision trees to improve predictive performance and reduce overfitting.
-- Implementation: Using PySpark's RandomForestRegressor, we train a random forest model on the House Prices dataset.
+
+To follow up the decision tree model, we will try the Random Forest Regressor, an ensemble learning method known for its versatility. Random Forest builds on the simplicity of decision trees by creating an ensemble of trees with controlled randomness, which is meant to improve the model's generalization. Since there are many different factors influencing housing prices and the potential interactions between them, random forest is able to uncover the underlying patterns within our dataset. By combining the predictions of numerous decision trees, each trained on different subsets of the data, the Random Forest model reduces the risk of overfitting and gets a more comprehensive picture of the data's intricacies. We will tune the hyperparemeters such as the number of trees in the forest and the depth of each tree, which is important for balancing bias and variance and achieving a model that generalizes well to new data.
+
+Root Mean Squared Error (RMSE): 38707.43179219108
+R-squared: 0.7598180871351901
+
+## Model Evaluation
+Residual plots for each model revealed that the models perform worse when trying to predict the price of more expensive homes. This could partially be explained by the difference between between the predicted and actual price being a far larger value, but still a similar percentage off than those of lower values.
+
+Comparing all models, it was observed that the Random Forest model performed the best in terms of MSE and R². This comparative analysis highlighted the strengths and weaknesses of each model, with Random Forest and Neural Networks capturing complex patterns effectively, and linear regression struggling with the non-linear nature of the data.
+
+In summary, our exploration through different modeling techniques has provided valuable insights into predicting housing prices. The varying performances and characteristics of each model underscore the complexity of the task and the importance of choosing the right model for the specific nuances of the dataset.
+
+## Potential Improvements
+
+Advanced Feature Engineering: Continuously explore feature engineering possibilities, considering more sophisticated techniques like dimensionality reduction and text analytics for property descriptions.
+
+**Time-Series Analysis:** Incorporate time-series analysis to capture evolving market trends and adapt to changing dynamics.
+
+**Advanced Modeling:** Experiment with state-of-the-art machine learning and deep learning models to capture complex feature interactions.
+
+**Cross-Validation:** Implement robust cross-validation strategies to ensure model stability and reliability.
+
+**Feature Importance Analysis:** Conduct in-depth feature importance analysis to unveil hidden relationships and patterns.
+
+## Refining Data Selection for Ongoing Analysis with Rationale
+Some important data useful for analysis:
+
+**OverallQual**: The overall quality of the house is a critical factor in determining its sale price.  
+
+**GrLivArea**: The above-ground living area's square footage has a substantial impact on property values.  
+
+**GarageCars**: The number of cars the garage can accommodate is a practical feature that influences price.  
+
+**TotalBsmtSF**: The total square feet of the basement is a significant contributor to property value.  
+
+**YearBuilt**: The year the house was built is a fundamental factor in property pricing, reflecting its age and potentially its condition.  
+
+
+
 
 
 ## Key Insights
