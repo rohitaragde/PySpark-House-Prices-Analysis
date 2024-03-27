@@ -4,7 +4,7 @@
 This study delves into the intricate dynamics of residential property prices using Kaggle’s House Prices dataset, sourced from Ames, Iowa. With 79 distinct variables capturing various facets of homes, we embark on a journey to uncover the hidden patterns and influential factors behind sale prices. Our objective is to employ advanced regression techniques to develop accurate predictive models, shedding light on the complexities of the real estate market.
 
 ## Dataset
-The dataset used in this study can be found on [Kaggle's House Prices competition page](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data?select=train.csv).
+The dataset used in this study can be found on [House Prices Dataset](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data?select=train.csv).
 
 ## Objectives
 - Develop accurate predictive models for estimating residential property sale prices.
