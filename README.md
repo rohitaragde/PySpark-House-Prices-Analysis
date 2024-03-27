@@ -89,14 +89,15 @@ Some important data useful for analysis:
 
 **YearBuilt**: The year the house was built is a fundamental factor in property pricing, reflecting its age and potentially its condition.  
 
-
-
-
-
 ## Key Insights
-- The dataset comprises 79 distinct variables capturing various facets of homes in Ames, Iowa.
-- Advanced regression techniques were employed to develop accurate predictive models for estimating residential property sale prices.
-- Market trends and influential factors behind sale prices were identified through comprehensive exploratory analysis and feature engineering.
+Our analysis of housing price prediction models using Linear Regression, Decision Tree, and Random Forest revealed valuable insights:
+- The Random Forest model demonstrated superior predictive accuracy and explanatory power compared to other models.
+- Key predictors of housing prices, including Overall Quality, Yardage Above Land, and Basement Sq Ft, were identified through feature importance analysis.
+- These findings have significant implications for stakeholders in the real estate industry, enabling more informed decisions regarding property valuation, investment strategies, and market trends.
+
+## Future Research
+Moving forward, further research could explore additional ensemble learning methods and feature selection techniques to continue improving predictive models in the real estate domain.
+
 
 ## Future Work
 - Further exploration of advanced regression techniques and feature engineering methods to enhance model accuracy.
