@@ -1,5 +1,13 @@
 # PySpark House Prices Analysis
 
+## Objectives
+- Develop accurate predictive models for estimating residential property sale prices.
+- Aid homeowners, buyers, and real estate professionals in decision-making by providing accurate price estimates.
+- Identify and quantify the impact of property features on sale prices, empowering homeowners and guiding prospective buyers.
+- Reveal market trends through the examination of historical data, providing insights for real estate investors and policymakers.
+- Explore various regression techniques, from traditional linear regression to advanced algorithms, to support data scientists in selecting the most effective modeling approaches.
+- Delve into feature engineering to optimize model accuracy, benefiting data scientists and analysts.
+
 ## Overview
 This study delves into the intricate dynamics of residential property prices using Kaggle’s House Prices dataset, sourced from Ames, Iowa. With 79 distinct variables capturing various facets of homes, we embark on a journey to uncover the hidden patterns and influential factors behind sale prices. Our objective is to employ advanced regression techniques to develop accurate predictive models, shedding light on the complexities of the real estate market.
 
@@ -11,15 +19,7 @@ We selected this dataset for its potential in feature engineering and its demand
 Through this project, our objective is to unravel the intricacies of residential property prices, crafting accurate predictive models, and delivering actionable insights for stakeholders in the real estate market.
 
 ## Dataset
-The dataset used in this study can be found on [House Prices Dataset](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data?select=train.csv).
-
-## Objectives
-- Develop accurate predictive models for estimating residential property sale prices.
-- Aid homeowners, buyers, and real estate professionals in decision-making by providing accurate price estimates.
-- Identify and quantify the impact of property features on sale prices, empowering homeowners and guiding prospective buyers.
-- Reveal market trends through the examination of historical data, providing insights for real estate investors and policymakers.
-- Explore various regression techniques, from traditional linear regression to advanced algorithms, to support data scientists in selecting the most effective modeling approaches.
-- Delve into feature engineering to optimize model accuracy, benefiting data scientists and analysts.
+The dataset used in this study can be found on [House Prices Dataset](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data?select=train.csv)
 
 ## Methodology
 - Data Source: Kaggle’s House Prices dataset
