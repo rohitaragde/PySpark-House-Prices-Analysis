@@ -30,8 +30,11 @@ The dataset used in this study can be found on [House Prices Dataset](https://ww
 In our analysis, we implement the following machine learning models:
 
 ### Linear Regression
-- Description: Linear regression is a basic and commonly used model for predicting numeric outcomes. It works by fitting a linear relationship between the input features and the target variable.
-- Implementation: We use PySpark's LinearRegression model to train a linear regression model on the House Prices dataset.
+In order to find the best model to predict housing prices, we will start by trying a Linear Regression model . Linear Regression is known for its simplicity and interpretability which makes it a good starting point for regression problems like ours. Our dataset, which has key features like OverallQual, GrLivArea, GarageCars, and several others, in order to predict a single value is an ideal scenario to use this model. We aim to explore the relationship between these features and the house prices, hypothesizing from our EDA that factors like the overall quality of the house, living area, and garage capacity are significant predictors of price. Our goal here is to establish a baseline performance that the later, more complex models can be compared against. Our evaluation will not only involve assessing the model's accuracy but also involve a residual analysis to ensure the reliability and robustness of our predictions.
+
+![Residual Plot](/images/residual_plot.png)
+
+This plot shows the difference between predicted and real values. A perfect model would have a line of residuals across a horizontal line at 0, meaning that the predicted is the same as the real value at all areas. However, we can see from this plt that as the actual value increases, the residuals also increase. This suggests that the Linear Regression model may be underestimating the housing prices for higher-valued houses. while the Linear Regression model provides a useful baseline, the residual plot reveals that there are improvements to be made to better capture the nuances of the dataset and improve prediction accuracy, particularly for houses at the higher end of the price spectrum.
 
 ### Decision Tree
 - Description: Decision trees are a non-linear model that uses a tree-like structure to make predictions. Each internal node represents a "decision" based on a feature, and each leaf node represents the outcome.
