@@ -37,8 +37,14 @@ In order to find the best model to predict housing prices, we will start by tryi
 This plot shows the difference between predicted and real values. A perfect model would have a line of residuals across a horizontal line at 0, meaning that the predicted is the same as the real value at all areas. However, we can see from this plt that as the actual value increases, the residuals also increase. This suggests that the Linear Regression model may be underestimating the housing prices for higher-valued houses. while the Linear Regression model provides a useful baseline, the residual plot reveals that there are improvements to be made to better capture the nuances of the dataset and improve prediction accuracy, particularly for houses at the higher end of the price spectrum.
 
 ### Decision Tree
-- Description: Decision trees are a non-linear model that uses a tree-like structure to make predictions. Each internal node represents a "decision" based on a feature, and each leaf node represents the outcome.
-- Implementation: We utilize PySpark's DecisionTreeRegressor to train a decision tree model on the House Prices dataset.
+
+Now we will move onto the Decision Tree model. Decision Trees offer a more flexible approach to modeling non-linear relationships and interactions between variables without the need for specific feature engineering. They are good at capturing complex patterns in the data by dividing the space into a hierarchy of yes or no decisions, making them goodfor datasets where the relationship between the variables and the target may not be easily approximated by a straight line. Our housing dataset has a diverse range of features from OverallQual to YearRemodAdd, and a Decision Tree has the potential to discern the nuanced decision rules that might factor into the sale price. However, a  consideration with Decision Trees is their tendency to overfit the training data. To prevent this, we will perform hyperparameter tuning, such as the depth of the tree and the minimum number of samples required to split, ensuring that the model generalizes well to unseen data. The following code will initialize our Decision Tree model, tune its hyperparameters, and evaluate its performance.
+
+![Residual Plot](/Images/decision_tree.png)
+
+These feature importances show that Overall Quality is clearly the best variable for predicting sale price. It also shows that the feature we created has proven to be useful - GrLivArea2. It has 3x higher importance score than the original variable that was not squared.
+
+
 
 ### Random Forest
 - Description: Random forests are an ensemble learning method that combines multiple decision trees to improve predictive performance and reduce overfitting.
